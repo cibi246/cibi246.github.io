@@ -1,103 +1,59 @@
-# This is the default format.
-# For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink: /:categories/:year/:month/:day/:title
-
-exclude: [".rvmrc", ".rbenv-version", "ReadMe.md", "Rakefile", "changelog.md", "License.md", "Makefile", "Gemfile", "Gemfile.lock"]
-highlighter: rouge
-
-# Themes are encouraged to use these universal variables
-# so be sure to set them if your theme uses them.
-#
-title : Karl Broman
-author :
-  name : Karl Broman
-  email : kbroman@gmail.com
-  github : kbroman
-  twitter : kwbroman
-  feedburner : nil
-
-production_url : http://kbroman.github.io
-
-# Tell Github to use the kramdown markdown interpreter
-# (see https://help.github.com/articles/migrating-your-pages-site-from-maruku)
-markdown: kramdown
-
-# All Jekyll-Bootstrap specific configurations are namespaced into this hash
-#
-JB :
-  version : 0.3.0
-
-  # All links will be namespaced by BASE_PATH if defined.
-  # Links in your website should always be prefixed with {{BASE_PATH}}
-  # however this value will be dynamically changed depending on your deployment situation.
-  #
-  # CNAME (http://yourcustomdomain.com)
-  #   DO NOT SET BASE_PATH
-  #   (urls will be prefixed with "/" and work relatively)
-  #
-  # GitHub Pages (http://username.github.io)
-  #   DO NOT SET BASE_PATH
-  #   (urls will be prefixed with "/" and work relatively)
-  #
-  # GitHub Project Pages (http://username.github.io/project-name)
-  #
-  #   A GitHub Project site exists in the `gh-pages` branch of one of your repositories.
-  #  REQUIRED! Set BASE_PATH to: http://username.github.io/project-name
-  #
-  # CAUTION:
-  #   - When in Localhost, your site will run from root "/" regardless of BASE_PATH
-  #   - Only the following values are falsy: ["", null, false]
-  #   - When setting BASE_PATH it must be a valid url.
-  #     This means always setting the protocol (http|https) or prefixing with "/"
-
-  # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
-  # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
-  #
-  # Override this by defining an absolute path to assets here.
-  # ex:
-  #   http://s3.amazonaws.com/yoursite/themes/watermelon
-  #   /assets
-  #
-  # ASSET_PATH : http://kbroman.org/assets/themes/twitter
-
-  # These paths are to the main pages Jekyll-Bootstrap ships with.
-  # Some JB helpers refer to these paths; change them here if needed.
-  #
-  archive_path: nil
-  categories_path : nil
-  tags_path : nil
-  atom_path : nil
-  rss_path : nil
-
-  # Settings for comments helper
-  # Set 'provider' to the comment provider you want to use.
-  # Set 'provider' to false to turn commenting off globally.
-  #
-  comments :
-    provider : false
-
-  # Settings for analytics helper
-  # Set 'provider' to the analytics provider you want to use.
-  # Set 'provider' to false to turn analytics off globally.
-  #
-  analytics :
-    provider : false
-
-  # Settings for sharing helper.
-  # Sharing is for things like tweet, plusone, like, reddit buttons etc.
-  # Set 'provider' to the sharing provider you want to use.
-  # Set 'provider' to false to turn sharing off globally.
-  #
-  sharing :
-    provider : false
-
-  # Settings for all other include helpers can be defined by creating
-  # a hash with key named for the given helper. ex:
-  #
-  #   pages_list :
-  #     provider : "custom"
-  #
-  # Setting any helper's provider to 'custom' will bypass the helper code
-  # and include your custom code. Your custom file must be defined at:
-  #   ./_includes/custom/[HELPER]
-  # where [HELPER] is the name of the helper you are overriding.
+# Site settings
+title: Rob Hinds
+twitter_username: rob_hinds
+name: Rob Hinds
+#User specific content
+#Links that will appear in the navbar
+primarylinks:
+ - title: Blog
+   url: http://automateddeveloper.blogspot.com/
+ - title: GitHub
+   url: https://github.com/robhinds
+ - title: DZone
+   url: https://dzone.com/users/899489/rhinds.html
+#Any buzzword skills you want to include
+skills:
+ - Groovy
+ - Spring MVC
+ - Spring Boot
+#Blogfeed is optional - including this will add JS to call the feed and populate blog list
+blogfeed: http://automateddeveloper.blogspot.com/feeds/posts/default
+#Work experience is required
+roles:
+ - title: Senior Engineer
+   start: 2012
+   end: Ongoing
+   employer: Covestor
+   description: Covestor is an investment marketplace startup that was successfully acquired by Interactive Brokers in 2015. <br/> I am a senior engineer working closely with the CTO, working across the full-stack, I am involved in all aspects of the technology including the website and back-end services.
+#Education is required
+education:
+ - level: Bachelor of Science (B.Sc.)
+   date: 2003
+   subject: Artificial Intelligence and Computer Science
+   school: University of Birmingham
+#This section is optional (as is the image link below)
+coursera:
+   profileurl: https://www.coursera.org/user/i/c6362b4056f755a04bef6a791a62102b
+   courses:
+    - title: Functional Programming Principles in Scala
+      link: https://www.coursera.org/course/progfun
+      optionalimage: https://d1z850dzhxs7de.cloudfront.net/topics/progfun/small-icon.hover.png
+      date: September 16, 2013
+#List of interesting Github repo/projects to include - optional
+github:
+ - robhinds/twitter-sentiment-analysis
+ - robhinds/spring-reactor-twitter
+ - robhinds/microservices
+#Stackoverflow flair is optional
+stackoverflow:
+   profileurl: http://stackoverflow.com/users/258813/rhinds
+   flairimageurl: http://stackoverflow.com/users/flair/258813.png
+#Mobile apps section is optional
+apps:
+ - name: Chuck the Quiz
+   platform: Android
+   url: https://play.google.com/store/apps/details?id=com.tmm.android.chuck&feature=search_result#?t=W251bGwsMSwxLDEsImNvbS50bW0uYW5kcm9pZC5jaHVjayJd
+   description: A basic early Android app (open sourced)
+#An additional info freetext section is optional at the bottom of the page - can be text or HTML
+additionalinfo: |
+   <strong>JVM</strong>: I am experienced in a variety of Java API’s and frameworks. I have recently worked with 
